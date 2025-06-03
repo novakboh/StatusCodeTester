@@ -48,7 +48,7 @@ IP = "127.0.0.1"
 PORT = 4000
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind((IP, PORT))
-dsn = f'DRIVER={{ODBC Driver 17 for SQL Server}};SERVER=localhost\\SQLEXPRESS;DATABASE=db_name;UID=;PWD=;Trusted_Connection=yes;'
+dsn = f'DRIVER={{ODBC Driver 17 for SQL Server}};SERVER=localhost\\SQLEXPRESS;DATABASE=db_test;UID=;PWD=;Trusted_Connection=yes;'
 server.listen(1)
 conn, addr = server.accept()
 authreg()
